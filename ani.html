@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1583513645242-25a32d451084?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8a2VyYWxhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1600058644245-ede8d11f6522?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8a2VyYWxhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1590050752117-238cb0fb12b1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8a2VyYWxhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1597735881932-d9664c9bbcea?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8a2VyYWxhfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1601219990104-d397f9e721e1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGtlcmFsYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+  <img class="mySlides" src="https://images.unsplash.com/photo-1591934121679-ece0904e7fe4?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGtlcmFsYXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60">
+<img class="mySlides" src="https://pbs.twimg.com/media/EkIMAVRU0AMHbWY.jpg">
+
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
