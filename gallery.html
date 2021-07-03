@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>GALLERY</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <style type="text/css">
+    body{
+  background-IMAGE: #CCCCFF
+}
+h2{color:#fff;margin-bottom:40px;text-align:center;font-weight:100;}
+.demo-gallery > ul {
+  margin-bottom: 0;
+}
+.demo-gallery > ul > li {
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    width: 200px;
+}
+.demo-gallery > ul > li a {
+  border: 3px solid #FFF;
+  border-radius: 3px;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  float: left;
+}
+.demo-gallery > ul > li a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+.demo-gallery > ul > li a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+.demo-gallery > ul > li a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+.demo-gallery > ul > li a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+.demo-gallery > ul > li a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .justified-gallery > a > img {
+  -webkit-transition: -webkit-transform 0.15s ease 0s;
+  -moz-transition: -moz-transform 0.15s ease 0s;
+  -o-transition: -o-transform 0.15s ease 0s;
+  transition: transform 0.15s ease 0s;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+  height: 100%;
+  width: 100%;
+}
+.demo-gallery .justified-gallery > a:hover > img {
+  -webkit-transform: scale3d(1.1, 1.1, 1.1);
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster > img {
+  opacity: 1;
+}
+.demo-gallery .justified-gallery > a .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.1);
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: background-color 0.15s ease 0s;
+  -o-transition: background-color 0.15s ease 0s;
+  transition: background-color 0.15s ease 0s;
+}
+.demo-gallery .justified-gallery > a .demo-gallery-poster > img {
+  left: 50%;
+  margin-left: -10px;
+  margin-top: -10px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transition: opacity 0.3s ease 0s;
+  -o-transition: opacity 0.3s ease 0s;
+  transition: opacity 0.3s ease 0s;
+}
+.demo-gallery .justified-gallery > a:hover .demo-gallery-poster {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.demo-gallery .video .demo-gallery-poster img {
+  height: 48px;
+  margin-left: -24px;
+  margin-top: -24px;
+  opacity: 0.8;
+  width: 48px;
+}
+.demo-gallery.dark > ul > li a {
+  border: 3px solid #04070a;
+}
+.home .demo-gallery {
+  padding-bottom: 80px;
+}    </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        window.alert = function(){};
+        var defaultCSS = document.getElementById('bootstrap-css');
+        function changeCSS(css){
+            if(css) $('head > link').filter(':first').replaceWith('<link rel="stylesheet" href="'+ css +'" type="text/css" />');
+            else $('head > link').filter(':first').replaceWith(defaultCSS);
+        }
+        $( document ).ready(function() {
+          var iframe_height = parseInt($('html').height());
+          window.parent.postMessage( iframe_height, 'https://bootsnipp.com');
+        });
+    </script>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>LightGallery</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://cdn.jsdelivr.net/lightgallery/1.3.9/css/lightgallery.min.css" rel="stylesheet">
+        <style>body{background-color:#152836}h2{color:#fff;margin-bottom:40px;text-align:center;font-weight:100;}</style>
+    </head>
+    <body class="home">
+
+        <div class="container" style="margin-top:40px;">
+            
+            <div class="demo-gallery">
+                <ul id="lightgallery" class="list-unstyled row">
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                        <a href="https://www.munnar.com/tea.htm#tea">
+                            <img class="img-responsive" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/07/Munnar-Tea-Gardens.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Tourist_attractions_in_Wayanad">
+                            <img class="img-responsive" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/07/Wayanad1.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Ashtamudi_Lake">
+                            <img class="img-responsive" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/07/Ashtamudi-Lake.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Kumarakom">
+                            <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1gukO7P_dymBCttg6HsSIstPxxxmwTTz3t0VbNSzwcl2Y9eOp68Col4fBNQJX3os-X7syBPrarxYv5w&usqp=CAU">
+                        </a>
+                    </li>
+    				<li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                        <a href="https://en.wikipedia.org/wiki/Thekkady">
+                            <img class="img-responsive" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/07/Thekkady.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Ponmudi">
+                            <img class="img-responsive" src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Ponmudi.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Bekal_Fort">
+                            <img class="img-responsive" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/07/Bekal.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Varkala">
+                            <img class="img-responsive" src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Varkala.jpg">
+                        </a>
+                    </li>
+    				<li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                        <a href="https://en.wikipedia.org/wiki/Kovalam">
+                            <img class="img-responsive" src="https://img.traveltriangle.com/blog/wp-content/tr:w-700,h-400/uploads/2019/07/Kovalam-Beach.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg" data-src="https://in.pinterest.com/pin/348325352419952835/" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Kochi">
+                            <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjvCRI7BFid1oyNa5bxyM5F_l27teMpJmoDwyVAUdYwVgA8tdITVPzKHdBl0jQuSItNFw&usqp=CAU">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple">
+                            <img class="img-responsive" src="data:image/webp;base64,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">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Category:Tourist_attractions_in_Idukki_district">
+                            <img class="img-responsive" src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Idukki.jpg">
+                        </a>
+                    </li>
+    				<li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                        <a href="https://en.wikipedia.org/wiki/Tourist_attractions_in_Kannur">
+                            <img class="img-responsive" src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Kannur.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Kollam">
+                            <img class="img-responsive" src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Kollam.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Kozhikode">
+                            <img class="img-responsive" src="https://www.ekeralatourism.net/wp-content/uploads/2017/12/Kozhikode.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/13-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Vagamon">
+                            <img class="img-responsive" src="https://www.ekeralatourism.net/wp-content/uploads/2017/12/Vagamon.jpg">
+                        </a>
+                    </li>
+    				<li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/4-1600.jpg" data-sub-html="<h4>Fading Light</h4><p>Classic view from Rigwood Jetty on Coniston Water an old archive shot similar to an old post but a little later on.</p>">
+                        <a href="https://en.wikipedia.org/wiki/Kavvayi_Backwaters">
+                            <img class="img-responsive" src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Kavvayi-Backwaters.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/1-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://www.tourism-of-india.com/kuttanad-tour.html">
+                            <img class="img-responsive" src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Kuttanad.jpg">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://en.wikipedia.org/wiki/Malampuzha_Dam">
+                            <img class="img-responsive" src="https://www.ekeralatourism.net/wp-content/uploads/2018/03/Malampuzha.jpg">
+                        </a>
+                    </li>
+                        <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2" data-responsive="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-src="https://sachinchoolur.github.io/lightgallery.js/static/img/2-1600.jpg" data-sub-html="<h4>Bowness Bay</h4><p>A beautiful Sunrise this morning taken En-route to Keswick not one as planned but I'm extremely happy I was passing the right place at the right time....</p>">
+                        <a href="https://www.cghearth.com/marari-beach">
+                            <img class="img-responsive" src="data:image/webp;base64,UklGRkAgAABXRUJQVlA4IDQgAAAQvgCdASosAagAPq1MoE0mJCMiI5N94MAViU1x6++Xb6fclHQT9hTmtn8V1TYvA2xeIjyIc9U7+Tn+p+N3a1x38b/w/mL7ZnKfkpKuxT/gc5v6r/l80f/e9aH6l6VPrK/oXmc+nBu//rT0s3J29B66f0f3zNz+8n9p4I/4b+neyvat/l//3xH/WP7Hkf4f3UP9Dx/tGf/j0U/yf/b6k/TXw9/9XRL+IL9n/8Psh/2T/qbsydVn+XG32r/Goki7XdHHKlGS9yGkNgvaJu1zToL1+ULGEwvNp4et1LTHluanZpBf417iJ9biP/oH6f+WAtu+iM6SIyJWmMmrfklqQPb5yvedjGnwsomMDcw+Ybvoy933mmUWeH0V+kPCvtgWwjtG54EJahGw0PFG+0yeCP0tPzms6ypLGBUrn9YkkJgYIejgxO34gdF8yVfbTip1Qsvjw9vwWYtxu+PqfndyqqEPfvGGkyDyaQsXdROUyTPRA2JVXZ2SL5xzUKfXgM/LlWJO6Phd42moCeo7jJkce83ArMrnXDE1jIWp2Sd1snS1skVeV9Kg3NIanUL9OA3YIX9TpUxBeAlpiAhbUUYtFjrtqveXyRIrL3Cnn2x+AzENJBz75uwofXmn2dlf/+zNLzVaOPQeyWRCf0oa77v/mdIaf4+W89Z4/MOOGBL6UxvSopNz1cU9pOu0/GWl5TNBN7ADO+mBP+h/viR0ymiPfVI5aBVExrFqKBD697+tlHYDe1xM5F5e2xuAtaxZ4wr2j5lSWJ6kqcbRj413GKPZzlrjUiQro783waOYl2X8QBPcr3ph32wkYvsmTseltWrPu/X6TDjYTSZhlnag+I033xmBR6av9rC85UvbBmS08zvjl7r9KuLr+TGyP0hc4evkQsXSsp3M+l6NVpXr8OvNzN2SOGOjV3k54gjSvWPjLvaDmCRdvGPD75tKeZHGtnrd/Em0jTvyV4nIsjQK2bn9O+bBVNedxBfAmQ8t+OPOJZKJL5fF5sJZC37dHFA9JUqF2T/1+ziM6HRP4Vyq3PH3qB5aYV+A6s0v4IkdPhtsTHu18LIoLxCpdqSp47gkvsmxgOBft6FHSPvDQ3hUu7nuIG5s00KdAk9rcqR9vDSClmySP2GWBB1El7jIBhqOAoeTnWYwz2rzi/ItDktXD7Gye3fae7A8M18wllgOiOMb9Z7Ugmdri2US7OjjPnUCeghwJ23CFcdT95af6v/Zme4138QkubjTguzWmXYLRSKWSOJHgX/vJw7dLy9qKZDrFPyd83cYeniYDLnd3wWVOonFjv5G46tg9rD2y6vQpf2U7oRJo/2gwP2Oobj7Tb7b/+WZR2ZyzN3/SMBW49KcFaTK4TjzkpD7grs5YcNeT8wzbI/7MYSLSq9TttRbiFa9I+gTi+ngs0hIZ9bY2n0VcQQ++tHUQl4tBco4OYI4qhFliS3vi372sMVW2f43UqQfB4Z+XQz/Kk5vEhS5R4tfB048Tf8XTxRNaT+mP9fuAvyyChIP0zv4HbiDt+sICj9tfouvdnZT/r9OxxA2sHc0uPznNkz11Xy/rdXcMEo4MXSQOcGg1dfrqBFvohZShyctEMb6g1JteJpUvVdnRqYBnaxFEfmRPG+bEmUUp/L02YDjzuZYYoZdvFsfm48ZP0W4vMsawIVj33G0FImQMYyeABFh9eGFLoWrW8fnbFY3vOA12alXmf54eTSWGe9iPohWXj3krxSwfa/8u7mvkjlNcH5rP+kQang0wiJ5PWm+xa4e9xRjJUra+7+l1a3MyfmlWtfb/k5L8lOLmmH1R9svAiCeYiGxRZ171sQvN4qs2cNwexm2BAwjk+sYjp8jOVjxSMDwf9rL/+8Csci4yuoSMrrkcr2+l9Ur8Y4xzQJIGEuoW5l7/pMQ8yi+g2qcDnwH3AmtBDwSPvsLZN+s6kckN/LCBWdi5H1FeT63VcXnewWR903KE8J0mKGSJ7Fg0TQNL7kImFie5lt402irod3aITPSN0Zp6rUt0GuHjfhWEPTXoGZT2cjB1VlOogVZQAD+8T4qhP5I2goEqYhrS3DcntBU9aPqLx6odfoFwc/Va4+8SmIJPIP+FslFlQgnHiRxBHH0Z1j1vzifOR+be8I+Z5wTZlrixJ0ys6AVHVARzyeQlbYvnYfgnxHfgaJbWez7J9r0pjV8Pt4HRrRuioiorunOCtReqCdUbDweGm/JpbERt4gpHtqq89wB4drSZf9ubX+N3NojKiAuC6NHwTRQxGxq/WFVN030WdvcqHH0DBuO142+xm/LmJKGca66wKF9mxUUk7TylVFjeXhTD9So6kv6k9+i4jhhwfmhYqA5WMJbCQ9eQhxkwQ72DNA1RIqN1+v1snE+khs1U/Ijs0fmsOsZ/rKdyGht0jirtushGNF14xWhl44QrbamjEiFqU6znIZ9SP7DvzN3VpkdH2u84n95okLdmv7MFU+UNkgrdXLbDsnVGZmOlBMTOUcm3+O8n4pDPckUC5ItDXLXKEhsqjBduEovXanfnqIFpcXbrCxO1/3QZj6Y/Z2XwdPPpOzIBKBNa7VQVTEFTT19dTw/9hCpHC66DQ+/SDy7XK5l8z5TQGOWyTngtVElrVNJdLUqhltgGwjJijOlYKlY3qWIa5/vUQnpPH5CXjreBf1QgihGnVC4atuV/idIYyTsH5vCh2eEO62DKPGW50OupYnZbc9mBiymuOJeYUhpSCdcU5ecVN0i8OeRWIrRpqcI2K80EakTM2QbxS8rYuayanDDwgW4MJmPJcSACa5X/Y0gVwiJGg7vZbb0lQMup5YpYSTEIVuXyWSkTiwsVUB52G7MxEcxJ0IlAU4FXkjg5AUCh7uqB/AzVEyTSvWn/2hqshqrp7Z1O6byAU0KiH9wnCXCmoZgwlzojMW8Cu17MyJZaCuVLjU6foRsQdwWP+RBwSOqS6NI0el6HsnX5af3WUHOB+k2aLxmyTUVtNIwZbVVBzptt3PpLLBWsivYWA8iVusxYiO2I2yeVPY2GKeesuds50kVVRk6j9Mha0+w4np1XeAoVAjsidWyCBGub/b+X2Bpr0sbwA818ae4DzfJZ4LS/iAV4/Q4L+3QaP7S8frZVNma/GOBQp1tC5g5E/9pxmCJsMDJO3RcGrVn5rp0WQxHr0gVoU6Gbff4aJl4fZAZC46IPAF5fFQEs6uEFWTcb/+iAtipVAXRDj/O5AR4PVzMbXcUam4ZFRi19r7Zcr4anaEcjdS2iXYKRwDWG/uLyHDGEDa54c+/IfYy3dBp5dznsw2Q3AXULQZafhUwod2YDfYDyw0NpRWPoy2qvQW0eAM6YtjodBJL5aASzdTQR4GhpLhAMrAep6EYWwO3FCTmWjwho9IAwMRiWCntDhfei4000Ug+4QprhmK7vxM87yEKezXZAziATSyhcHlTxDa5LK17Ltcajv/5WybTAp4yZYea2aniIjRgrgTh183IdZE4D00TD+Tv83ug2264r3f8jZA7xj7q+a5srK/d5scpCuqb/jqB4lWoJfeUMSjaY7OmOlVdHCTH51qSYwI4uZBPbXAOobKOzNFe11JjqxwpwIEbVftO3dbXm+Po4VlrSK5fh4z+7FIO6kT9ATos+55WzCZ8VNeHXbexN6Dw03vIk2VBUgoNH8QFIsWatOpsUqIoBeqbrX2VD8YzNweA4T2bK5jY1axkmxCzeudcV8/JlzEVDMqxenumCM5LiZik9K/yS5WwB/tjmGkFgwTnQ6Ucurca3JKlTf2IOQZfFYywRA9Vv9izAqjZd6XqZyQHmnWkVO3s5kUmYbTYH/clx+0pl/5fmzy0MOFh/8nc0DTH/QHidtBXFeJ7iqz6OfcKF0FqaIv+YGLU1ehMddJ7wOM5c8yzlmnwoTgzckadxiFeGqv17ixwkONTuiH1LXKqlGfPK6f69m2cD7f1GDbDWE2D2TVfEG9JkO/pMWpMYH6rNeuE8HIEdfmt/QQIRqacphEaFzWS1PUd8obAs9fQKbLyzNrZsy+ZgoHf7dDw9up/wtS1vuJKU2mxobrua8FBQOYCATx5FLyq4OkpCIOBy80tfbexSlJlQDnsY/rpqMuUyT2hAfNn99+ZcNqnwJ94QBj3ydbaIoEmEhFDciNBfdHtHxNApedlefaKwYOd5XqwnlqrqWEH2k39hlRCUHGoMNX+mI0YF15WeJMKme9CNaRcBGER/Ui+zBAEE2BQyw5RDygiGPAtmum4SoSMx7EyVb9PhUsyzMD3FmL7UeHUFkAgVjeNBK5uvAIumNJWWB1CbO91noYvphY86I5Krwit0eIzQwDJgnoQJRJGpGFQm2QFg5NuxIXafdqh6D3B1BD7X7BNU5+ioEp8LIRhYgObcJ6YF4ikkeOTFqAP4hl4NwYPbXoKo9hSTKC6iutnMGOzOuAdHhp7SS0szunY438LY1SQLWmckvfVWcr/aaHHLYA7aSO/IMSp+e/ECixlr7WvyAnK9gdICKOOiXbEHoUB8Y82+WIuhnSTSIxVFvpPhLfQjojjjHqrF2T5y8Rng7Y+5WOq9C4opBDftVdBwVT75DWmKqz3i+NGAtLjZ1LNwfdqDOy9zZ7Nmzw1GcpqTyR5bAdWSZM8WPIY7rCrvTDVUctvckHJCMsw6loW8htVqaFS0pTxhwbkut75Ph55miya07SF/7tWDhozsYjyUrLStxQyDaoPQXCZpM6tTaeCEBUMor3m7Ts+W8v0SEOfVwQI8sr9QALlKTRfhUd29PL8zrNwZ3cwqqCjyXK5VeOuoDxsRdej9bRPv3pq1xCMMx87IB6pVeCVOSegD9glmfeARLpYyzYrMuPrxW9UcApHz4/KXbzl0JooPjSbvE0zqtaEKyeLyjhUHlkviY6YKAEsWmgd6o25DuXEHuRambFhSsZYWx7jCfCrPxYFY/FFDtuzeDvBmagBgqfguw1IkrCFrzmbc2lIXX5zjTwmysKiUVDV8IoQ8InMYQVVTGvCyzeeJUHxdhANc3yGEr5nVl1SwAXzbitsjPpSiRrQO3jFz/XKfvl+qoUy0Gl2vxL+Qy4U7wAW28dxeMGGMVp/t0NzoJGDXMinKf0US0jO9KcdwIJmEUcxCXBZwNUwlIHGggr5VbEAfKXzkJkoHHZGaBkNqP6ZkU3zlBqEaWJayW/NlHPfBqaMGXJsUpj6zaBxClQFMJ1MBjSlBEKABiEwjde6Rn9CZ4kqTfvZG1yTi0iTwhqd9gURTPpDtd/ozL57zJwYCzW4ZTS/Hht0BC4YkRU+xuBgDSHRmNgGPfYjU1wPnKlX4UBakAjdnb1IHWTg7O4cwBZbKyRHNnflPc1UfgQobQ0z2qs7elqXaJvhPEl+0c7WanzqvCCJD8+IJqRLdQ+ya4Cvr/Ilfs9w9HDkWxqv04Bhzs6ftRAL83q1bdrJGHCa3TSN9R69iR9oQ/DgGx4E64PHeOTHEV/VGCqQxNQ19//RDpHLFNyd5uApHyDQgw6HsRyo4NTRJph1Hbo9wtmhu7srTOaEi2jYKqGR6R6UjOtvXkfaYvb+UKAZNtQC1CKq/v/XL68tUazjfBqMV3+HnhBA7Lpd7u3lHHi2MS3rA9fTZFUewDGvkPC1FYBcd/PjIfGfaQ1+duh5it5zMEkXJ1vUAzbjJu2YkPa6VpXOh8N8NlmW3SeJin5lsuDtHrt+GmrKaKINCtbOcoVkIWUrqhns99ObATIOmhsWIw2hCfaz/GrUTJ6uE8Gb/WBAyb5hSOCrob5WkN+OQL2dilFBTPhYFwMtgJpRyZLXO3FTto0Pr3lWQAPKvV4mY/jD0KByzXM1faH7bKQDJC1vjztB+dH/1JTRlUar+lJVuXtUhV/037gNwWP3+N4pU55+nwg8Ul4s5MFn5Jf7NnY+2ATICBXuvabhI47Age5K8hyIFhR3MyREUvo/KN0oWkoY3+W+b7SMdMK6PhkhjiR9I4fwPkJTqdLyEdRfd57C3dCP0/3Wp70PkeTmkdRTvKvY/NQ6CoBBfZHRYXnBPV3LevAoXf0lLA9vU0ebFFjkA5fes0Drwr69Zj73fWUCUAUhg3FaZCeQ5se62p7in/JvOdBbszkuMtOirRczN932tjPhuVDeJCbLk9mFS8tU6ZV+LuePC8tnkjIJgbwlbdjswJr80ecwVjdlHCDMK0GY1UNEZXhPXNfcuiM3fmY9H13Nn5w1OU6AOos133yeXgn1uJ4AFgu0uSzdDczpZDxcr3BHyjTE7FvnLt7KgwqBcbT+P6sJYx4UgjkPOOaT9RenoBKXZkoBUpsk2Roe144WB95IKbQVd0pb+P5hU8ERQSZTAe27IBUIU89WLAKjaKJebP9P9rNjsUjkSYatLbNuGEaXBzNbiLqbd7LzqosngOtUnQ5FPFjW5rL4mMrs14qHjRdHlPHG0zOsXA6ACNIgBJWK87cWzceUhne/jIpSj8nPkSvwyljOvxavjOJ9uBDnoX4l7YW+cZhO8Hn06xTiv6in3pOiu3Wmtu9TalmagzXBqThYzskYMRUChv6azj1fRfMzP062gjuHhfau94tKf9LFfv/K0AOhF7FAJkoqueBvLBz/l09HJao7PL52FTPF3ZM9PfuYpMIwGlMkWP2mYD9JFKAnZBC9Hldb6y6Ewtf2uOWAf4LyKV/mmOnjNoypa99O+hCuqwaMoXlro8EzGGjmgeo/KPPNN51BnzAlhsYclC0Bn/0JqrSjFP33XTFLlOLRmLqaEwJHEz9t0cbFVhkawCYzY8A5mhbb6r/HerzmoSKfbVHfFjpCcpmKf+/9spToK/3Ze0DBKXV6RY5Y9j0xd+NXXqftR2Ak+4kU4yg18nUada01ODdMBBNzHQnFa5LeBtBsloL4fsJWLLv9mpP13n5cngZvf8BTO8UZ1NYPl4ZoDLlxqSfrv4fW9qU4px7As/Eh1ndUBLX9S2svKRiAUN0f/21ogF+WT3/PDge2v1j/xUL6wFhEFZHVipJzrn6KDfPFylU2GuRtLSuSE+4nqC35jPvY6UtOh7pY+l6xGpclTnLQzUmr/VV7h3+3fUq0pPRAl0B3QIcZaq6JsAfNPROrjT4+6jUI0eng5wV486UcEC0SQsyH/F5fN18RdK2X566WKrsWT5XyT+x6PptsAlOS7uXMhaaYHQJT+t2x5IjMDHz/Wm/e4FZxK2Bre8NvoKEmSIH6ZKX0cq/ifvVvfHkbnVKJXF6laMGftQ/1WE8HSQp0upibVNqsEOKHO92+UFIpq/kqGeFy68pNe1y7EUO6OMqLTZUcdGyKe2nF3nKZQ22xz/tS6TxV2u8VvmKnWMErv+GVY2d7Yh3MtPn6u7RCO64JnSb9UbgH6NBxtO7uNqGSqup2ZLorDx6UvBtZu8Gc5jz13/OUKu0SZWNPhntCYr6jjptf/98MBCkT3ockxcda8yiUGZCSZaj6xNVZ0x/Vzj9wm2Nkk8vz5ZlrgLbSOy2ajxn1Nydlgzeh90Pu/YZSUbQd76GpE+JsrMqKsnxJqrTZeptblYL2doy3JhYDrYXLqbcpJvqzG8/ba9c/Ua/2S7f+P3KRhNIDI86PAxRn4dcbLDrJzybKC4rhltYpreBSO0lR585Olg0sb8i4F2bzgSzF3ZRiPrq2QwoGtceT07dV0U9Ni21xVNCp4qmiyoTP7Y/17YdlOEIPo0i+CM5E6wMO3gTIFftwcbw7e0IXVaOkxuZtiiuMufnYQLEwKuVw6I0n9ynN1nv26Q+2v6n15G0CWplJSpbIqqpNoTnGICCGkXklokaoeMiBwxsWvz5zsclhlXTgU5KQo1AG4wz5Ji9J4lUvXRuYyYE6lQHTDBaoKgJeuge4hiHuaJ/NKY9zrynaXduYIzI2GT1RocJNvcX6KRz8c6g8k7GgYFaiqTMYUmxxoLfiJiNg0g27RSxzgf6/2dy/2Q8np7xzj3Hie2MmvKLrjWjFr32L5bS+BXS66mRUmvqlVMfHnLArbo5uzcm9igOVB2K+vO/h/bTaIXhelp81fGnOlF6abjaXeaElaBJOrBUcG4ZLwWxnKfB1WCwqJHH+sF/aMn3rCZ5LhoN+zKNiHLqsE3/6ifkZ/3xqJ6Do6DO47bPsV4rq0KPrHF+cY4hEK+orD4gensWgaYQwC5fsRoyPsyDuNX99NH46CvzgQYUUrNeYT/9H1/pkGb/XFFN/aiY7HVe7XgbIDumJnAzpEdlTy/uUeyGHb+g5OZ8d1mRiEn19Mpf0xd3FaEcOVvTto2dzrPk6wxUmzD8QyAstOxNPYJsyUsZZA6gsd0cucOCJ/5TXbd3qgOKZVDjqBUsr61bt7A89eaFIxmadvD4+HnliQOfI4UXoi9ksSbsKcV60+tHyFEPkCaUvuRgOBZrzfavdpLv76VU2QvKD44yiMzskPtM67I+SqRmtHhl69LpOwjVjgQqK2Rv7Rm4kKd9xs1G0aC+1o7OCZNWm+9yAPjv+oyhiuoWPoqqazO7gkV77g8wwL7w5mvygeoS5QPhwZ25F3vhzYG40cr48S1rvzTRBLBk5dVZVKsd/8F+0Bt+U5Pa8g+T1k1bTW5/ao+9gcT3fpBkxiDrAhuBGQu06wm9aBvusDJuZkVTz65O3hqGKfSSsO40zi7DwqM4QsT+Ofg5BfPjD3Lq4w8JSGT7zgDeCkLCUB118G9bZ9VBWpRYB3qkD4n8rDukrx2Th85NcC+5EAW7vF/Ltp/wxuRDd9uiUdIeTjjIQY3xRmRLaz0B0tc752b+fZHwjEuZ3E4AUcruNkvGoC2F6SoNpXWhEeG9/w0gS1oCGT3m4TaRROtZKjDPARzdFqVcqsR8YQHZ1dXh2K96lVMAK5r9I7iuIzqqVO0KScH81N/vA9dxhYJfabRbcQwxBCUPb0e1b6bYvS2zbOwkPmZri7mBJiiSkHzhnjCyb17NA/YAoo0ZI0vJGmuszdzUZJZQfUtNRYHrFjB/O9pvVtFaDU9wpBchWFBvNwSwhbFb3+M4TF3RPULuhQ8L+7t+68b8EHbLB9b6zJBvobo3gmMMX9QygG2mHlNdLNU6BCmsrMfGDpUHiLKZSR6yrpF6/PgvrAqa+INgo13OOd7mI+CnxrU//0HRLS5nxSCrth20A3GSCCkaCEA9oLR5hKb2dM36wZFZynhh9tJ6hjXWAWi4ZGB9mnqNYI8KNuYqbB1WdzqpKWb9wPS9zukJrwz3WNIaeFXp6QlukllWA8mgA/TQmo5GjyvqqRvplS5cG8914PotWdAfRJ1d94tORwOW2rkswUQrnhc6J7N7XT+4PQSAZLF/iJIuvhaFEijmpE5VUcp/izv+p4S9tUiOvAIckTeznLZZC7jlhv0Cs200oXTTUJ6T9iyGX0pka0gbjWn/D0gVeoafveDLRPA27LdKYaurJ2tkbKevyD1Xo6K6ag4F3/NHyYkFdmYlfUvr0f3XLBlZiZFRp2zmW9ajpJoHLtqtObwe/wQhYMmxZ2q9tHez7ZxLK2c71Ei4YqbjTR0RRegOHx+XcdMrzhScbAtyQiXQJ9ajlfoBBZsZrPqyFpFBITHcL88hb45U66FFqZ8/DLXD7JVWe4EE1F5edpaFZQexk7ne4fC4IDwtHPqF6SHse27E8j0RuGCAM5a3DTNKxf0Q9DNkQ/M8QRdLPgvuIPQSpcP3zNO62ffaErWyciRFbDe75qXS0AdQIXsCfM7D06B2uiT9wMycHCQkOOIdXdbBZski9t5CypsWyHbVHqGviDZ9CBYVrRwWbGhY921utT8XJroxJxC4j4PEJRFxK/XTasbCESMgHzBTTwUzdy0QTWAsDytZgNXjBcue7Uh+bsp2TOIlBU9Lg4ALkQ/Sggq5uj9qf3oD1iyrXI3S+LODbwV45u472bBNBNAk+fu0Q4ijNQn2UmiGwWv+U5HHTLTRo0V9+Ov4FvMLMXNVwaS8IyFIpJ1fNNdRiIs0ETkquyy0kLCFOovbWR8wdzi5X4x5UdmzlKmzEpTZ0RPb3jubh6U/WPJqtQeo7oTClwEEt0lZCAboPck8DrjVKqauLOw08m5fNIFigWqfKNONuraO8TY96WdwyUszX0DCanuqovku8NqW9LZZ8waG2wtBtPZ2fdQDoB/LwbSRGqii9CC4iBpyCY04/eVv3B85mM2gMrHYFtYSaWL30vySAbsjexLEIWBEamo+eDt8bVxSbtsk3GasRp5uG6eu/CW7Nj2ACsn+TwbKufwd8iL+WSVloNT+IxAx8NUtc4SPpc+MIF7wE59ETDfjVxwPT/0PXg1ajTLhss9jomJ28xP9eQlUDpD8gaXxV1sp9Me7crCyvCGXfR8GVb1tet/z5JGaVTlCui2aZwnvq8DwInFamQtbiwNuQTJMHbiR+yT4NOoKSvFwtcFq0Y5HcLcMbF4JSHuja+cFBhE8ar4nkDWFjyMvo2dUmpqOQpeuifkapagV53P0gQfUiKXnboeui0Rmz7yGyj9kZyVmWlCMpk9WLT9frByAa4SMnj0sdvJfYo2oPIYLhiwV3P7zAR1hDooA2IOsSM5uH5q0qMa8EAhgC5n/YFNrueU7aMICx331GKx8E30C+g5AJ3Ec7EsQzmDvjgQ6wmvVygVwJDE4obNdVPsU/BAf7HrTyaCom7MJt2jFcPeAjHkQd26d7tZoBleiLUhmGU2z2NO69ImtDlsI1g/0yi/USjYj4oLLwBbNXE0JmMrI1N/HcsN0YmEo4AOSvB39ZDEPqwAmbZKfbhY7tUF+ImceHdW8Mhtdtdc17u9gCZwsYaXSSPb+4k/WJgMFqy0dnJTlGmXtapai5IgGJ2BcQUhnbAhrq3csJINkkyna/IpIvqs/FYZcNIyuF7nJBLbyiIJOgO58zflCZl4V+owf3lTJkZoUSwmUUjehDHGH4XL6LmxrHCDj3RAx2n9nRv/k1z3c5ko1lwm4AtBw583vF+YGQXiaNQQEeiKlC76yro5i5ePB1YZAtL0cCzQBa6X/BLfDVbdYh/XhUe94iy9P0PQkicIUQdC8X7J9xS2XOPyXTLMR0AF5AAAA=">
+                        </a>
+                    </li>  </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            $(document).ready(function(){
+                $('#lightgallery').lightGallery();
+            });
+        </script>
+    </body>
+</html>	<script type="text/javascript">
+
+
+</html>
